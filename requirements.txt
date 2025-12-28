@@ -1,0 +1,5 @@
+flask
+scikit-learn
+nltk
+werkzeug
+PyPDF2

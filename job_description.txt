@@ -1,0 +1,16 @@
+Job Title: Senior DevOps Cloud Engineer
+
+Job Summary:
+We are looking for a highly technical engineer to deploy microservices on AWS. You will build CI/CD pipelines using Jenkins and GitLab. You must be proficient in Linux, Bash scripting, and containerization tools.
+
+Technical Requirements:
+* Must have strong experience with Docker and Kubernetes orchestration.
+* Proficiency in Python, Golang, or Rust.
+* Deep understanding of TCP/IP, DNS, and HTTP protocols.
+* Experience with Terraform or Ansible for infrastructure as code.
+* Ability to configure Nginx and Apache servers.
+* Knowledge of NoSQL databases like MongoDB or Cassandra.
+
+Education:
+* Masters in Computer Science or Electrical Engineering.
+* AWS Certified Solutions Architect preferred.
