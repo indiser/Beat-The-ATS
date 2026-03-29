@@ -1,0 +1,7 @@
+flask
+scikit-learn
+nltk
+werkzeug
+PyPDF2
+gunicorn
+uvicorn
