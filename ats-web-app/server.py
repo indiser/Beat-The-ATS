@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request
-from ats_scanner import ATSScanner # Importing your logic
+from ats_scanner import ATSScanner
 import os
+import uuid
 
 app = Flask(__name__)
-scanner = ATSScanner() # Initialize once to load NLTK/Models
+scanner = ATSScanner()
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -19,7 +20,9 @@ def index():
         # specific logic to save temp file if pypdf requires a path, 
         # or we can tweak scanner to accept a stream. 
         # For simplicity, we save temp file.
-        temp_path = "temp_resume.pdf"
+        unique_filename = f"temp_resume_{uuid.uuid4().hex}.pdf"
+        # temp_path = "temp_resume.pdf"
+        temp_path = os.path.join("/tmp", unique_filename)
         uploaded_file.save(temp_path)
         
         try:
@@ -59,4 +62,4 @@ def index():
     return render_template("index.html", results=False)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
